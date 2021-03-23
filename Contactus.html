@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- en stand fr English-->
+  <head>
+ <title>Thiet Phan -</title>
+ <meta charset="utf-8"> <!-- Character set for English-->
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  #more {display: none;}
+  .carousel-caption{
+    z-index: 0;
+  }
+  .carousel-indicators{
+    z-index: 1;
+  }
+h2 {
+  color: white;
+  font-size: 24px
+}
+p {
+  color: gray;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+</style>
+<!-- insert the javascript code here-->
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body style="height: 1000px">
+<nav class="navbar navbar-expand-sm fixed-top" style="background-color: black">
+  <a class="navbar-brand" href="Home.html" style="color: #ffffff">ThietFancy</a>
+  <ul class="navbar-nav ml-auto">
+    <!-- ml auto is for margin left-->
+    <li class="nav-item">
+      <a class="nav-link" href="Home.html" style="color: #ffffff">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Aboutme.html" style="color: #ffffff">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html" style="color: #ffffff">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contactus.html" style="color: #ffffff">Contact</a>
+    </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm " style="background-color: black">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<section style="padding-bottom: 200px">
+    <style>
+      /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+    </style>
+    <br>
+    <h1 style="text-align: center;"><b> Contact me </b></h1>
+
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <img src="C:\Users\Phan Sy Thiet\Desktop\Web2\04.03\image\9.png" width="525" height="525"> 
+        </div>
+        
+        <div class="col">
+          <div class="container">
+           <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br>
+            <br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="australia">Vietnam</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+
+           </form>
+          </div>
+        </div>       
+      </div>
+    </div>
+  
+  </section>
+
+<style>
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+.fa:hover {
+    opacity: 1;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #DD4B39;
+  color: white;
+}
+.fa-youtube {
+  background: #BB0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+<div class="footer">
+<br>
+<a href="https://www.facebook.com/phansi.thiet/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/PhanSThit1" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com/channel/UCPvsTsa6tlDYI2JJjyFVo3g" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/sy_thiet/" class="fa fa-instagram"></a>
+  <p class="pt-1"> Copyright 2021 </p>
+  
+<br>
+</body>
+  </html>
